@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Counter from './Counter';
 
 class App extends Component {
   render() {
+    let name = 'Michał';
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <header className='App-header'>
+          <h1 className='App-title'>Licznik w ReactJS</h1>
         </header>
+        <Counter initValue='10' imie='Adam'/>
+        <Counter initValue='20' imie='Karina'/>
+        <Counter initValue='108' imie={name}/>
+
       </div>
     );
   }
