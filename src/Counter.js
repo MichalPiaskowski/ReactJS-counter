@@ -29,9 +29,9 @@
 // }
 // export default Counter;
 
-//-------------------------
-//PRZYKŁAD STANU KOMPONENTU
-//-------------------------
+//---------------------------
+//PRZYKŁAD STANU KOMPONENTU -
+//---------------------------
 
 import React, {Component} from "react";
 import "./Counter.css"
